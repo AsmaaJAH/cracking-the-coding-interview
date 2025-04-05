@@ -1,11 +1,11 @@
 package ch3stack_queue;
 
-public class ThreeStacksInOneArray {
+public class ThreeStacksInOneArray1 {
     private int[] arr;
     private int size;
     private int top1, top2, top3;
 
-    public ThreeStacksInOneArray(int size) {
+    public ThreeStacksInOneArray1(int size) {
         this.size = size;
         arr = new int[size];
         top1 = -1; // Stack 1 grows towards the right
@@ -92,7 +92,7 @@ public class ThreeStacksInOneArray {
     }
 
     public static void main(String[] args) {
-        ThreeStacksInOneArray stacks = new ThreeStacksInOneArray(9);
+        ThreeStacksInOneArray1 stacks = new ThreeStacksInOneArray1(9);
 
         stacks.push1(10);
         stacks.push1(20);
