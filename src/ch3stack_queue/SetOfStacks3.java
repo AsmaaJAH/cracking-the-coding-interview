@@ -62,17 +62,17 @@ public class SetOfStacks3 {
     }
 
     // Optional: popAt(index) - pop from a specific sub-stack
-    public int popAt(int index) {
-        if (index < 0 || index >= stacksList.size()) {
-            throw new IndexOutOfBoundsException("Invalid stack index.");
-        }
-        Stack<Integer> stack = stacksList.get(index);
-        int value = stack.pop();
-        if (stack.isEmpty()) {
-            stacksList.remove(index);
-        }
-        return value;
-    }
+    // public int popAt(int index) {
+    //     if (index < 0 || index >= stacksList.size()) {
+    //         throw new IndexOutOfBoundsException("Invalid stack index.");
+    //     }
+    //     Stack<Integer> stack = stacksList.get(index);
+    //     int value = stack.pop();
+    //     if (stack.isEmpty()) {
+    //         stacksList.remove(index);
+    //     }
+    //     return value;
+    // }
 
     public static void main(String[] args) {
         SetOfStacks3 set = new SetOfStacks3(3); // each stack can hold 3 items max
