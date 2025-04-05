@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class KthToLastElement2 {
 
-    public static Integer nthToLast(LinkedList<Integer> list, int k) {
+    public static Integer kthToLast(LinkedList<Integer> list, int k) {
         if (k <= 0 || k > list.size()) return null;
 
         // The kth to last element is at index (length - k)
@@ -21,7 +21,7 @@ public class KthToLastElement2 {
 
         System.out.println("the kth to last element:");
         for (int i = 1; i <= array.length ; i++) {
-            Integer node = nthToLast(list, i);
+            Integer node = kthToLast(list, i);
             String nodeValue = node == null ? "null" : "" + node;
             System.out.println(i + ": " + nodeValue);
         }
