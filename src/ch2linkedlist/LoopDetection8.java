@@ -1,5 +1,5 @@
 package ch2linkedlist;
-
+//Q-- not easy:
 class LinkedListNode {
     int data;  
     LinkedListNode next;  

@@ -1,5 +1,7 @@
 package ch2linkedlist;
 
+//Q-- not easy:
+//Q-- garbage error in output printing 
 public class Intersection7 {
 
     static class Node {
