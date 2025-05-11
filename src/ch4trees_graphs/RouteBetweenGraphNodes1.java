@@ -1,6 +1,11 @@
 package ch4trees_graphs;
 import java.util.*;
+/**
 
+Route Between Nodes: Given a directed graph, design an algorithm to find out whether there is a
+route between two nodes.
+
+*/
 public class RouteBetweenGraphNodes1 {
 
     public static boolean hasRouteBFS(Map<Integer, List<Integer>> graph, int start, int end) {
