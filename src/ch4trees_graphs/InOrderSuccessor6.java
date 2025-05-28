@@ -46,6 +46,7 @@ public class InOrderSuccessor6 {
     }
 
     public static void main(String[] args) {
+        System.out.println("Next node in in-order traversal:");
         /*
          * 
         20
