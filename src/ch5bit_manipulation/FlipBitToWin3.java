@@ -2,7 +2,7 @@
 5.3 Flip Bit to Win: You have an integer and you can flip exactly one bit from a O to a 1. Write code to
 find the length of the longest sequence of 1 s you could create.
 EXAMPLE
-Input: 1775
+Input: 1775 ( binary: 11011101111)
 Output: 8 
 */
 
@@ -35,7 +35,8 @@ public class FlipBitToWin3 {
 
     public static void main(String[] args) {
         System.out.println("5.3 Flip Bit to Win:");
-        int input = 1775; // binary: 11011101111
+        int input = 1775; 
         System.out.println("Longest sequence: " + flipBit(input)); // Output: 8
     }
 }
+/* The runtime is O ( b), but we use only O ( 1) additional memory. */
