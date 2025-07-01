@@ -6,7 +6,7 @@ package ch7_oop_design;
 import java.util.*;
 
 
-public class ParkingLot {
+public class ParkingLot4 {
     public enum VehicleSize {
         MOTORCYCLE, COMPACT, LARGE
     }

@@ -6,7 +6,7 @@ package ch7_oop_design;
 import java.util.*;
 
 
-public class OnlineBookReader {
+public class OnlineBookReader5 {
 
     public static class Book {
         private int id;
