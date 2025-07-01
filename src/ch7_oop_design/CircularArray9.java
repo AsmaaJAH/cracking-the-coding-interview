@@ -39,7 +39,7 @@ public class CircularArray9 {
         }
 
         public void rotate(int shiftRight) {
-            head = (head + shiftRight) % items.length;
+            head = (head+ shiftRight+1) % items.length;
         }
 
         public int size() {
@@ -67,6 +67,37 @@ public class CircularArray9 {
                 return item;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        CircularArray<String> cArray = new CircularArray<>(5);
+
+        cArray.set(0, "A");
+        cArray.set(1, "B");
+        cArray.set(2, "C");
+        cArray.set(3, "D");
+        cArray.set(4, "E");
+
+        System.out.println("Original:");
+        for (String s : cArray) {
+            System.out.print(s + " ");
+        }
+
+        cArray.rotate(2); 
+
+        System.out.println("\nAfter rotate(2):");
+        for (String s : cArray) {
+            System.out.print(s + " ");
+        }
+
+        /*
+         output:
+         ====
+Original:
+A B C D E
+After rotate(2):
+D E A B C
+         */
     }
 }
 
